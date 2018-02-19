@@ -7,7 +7,8 @@ clean:
 	rm -rf ${APP}.exe
 
 comp:
-	g++ -Wall ${APP}.cpp -o ${APP}.exe
+	g++ -I/usr/local/include/eigen3 -Wall ${APP}.cpp -o ${APP}.exe
+
 
 run:
 	./${APP}.exe
